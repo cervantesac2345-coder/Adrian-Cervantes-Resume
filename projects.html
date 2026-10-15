@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Alfred Navarro</title>
+    <meta name="description" content="Projects by Alfred Navarro - Machine Learning and Hardware student at the University of Florida">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+        (function() {
+            try {
+                var saved = localStorage.getItem('theme');
+                var theme = ['dark', 'light'].indexOf(saved) !== -1 ? saved : 'dark';
+                document.documentElement.setAttribute('data-theme', theme);
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+</head>
+<body class="bg-global-bg text-global-text antialiased">
+    <!-- Fixed Header -->
+    <header id="main-header" class="group">
+        <div class="header-grid">
+            <!-- Logo -->
+            <div class="header-logo">
+                <a href="index.html" class="group flex items-center">
+                    <svg aria-hidden="true" viewBox="0 0 40 40" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" style="width: 2.5rem; height: 2.5rem; color: var(--color-primary);">
+                        <title>Alfred Navarro</title>
+                        <circle cx="20" cy="20" r="17" stroke-width="1"/>
+                        <circle cx="20" cy="20" r="14.5" stroke-width="0.5"/>
+                        <path d="M12.5 30.5 20 8.5 27.5 30.5" stroke-width="1.3" stroke-linejoin="miter"/>
+                        <path d="M9 24h22" stroke-width="1"/>
+                        <path d="M8 24l1.2-1.2 1.2 1.2-1.2 1.2zM29.6 24l1.2-1.2 1.2 1.2-1.2 1.2z" fill="currentColor" stroke="none"/>
+                        <circle cx="20" cy="5.6" r="1.1" fill="currentColor" stroke="none"/>
+                        <path d="M17 34.5h6" stroke-width="0.8"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Title -->
+            <div class="header-title">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <span class="text-xl font-bold sm:text-2xl">Alfred Navarro</span>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="mobile-nav-menu header-nav" id="navigation-menu">
+                <a href="index.html#about">About</a>
+                <a href="news.html">News</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="experience.html">CV</a>
+            </nav>
+
+            <!-- Controls -->
+            <div class="header-controls">
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" aria-label="Switch to dark theme">
+                    <svg class="sun-icon h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                    </svg>
+                    <svg class="moon-icon h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                </button>
+
+
+                <!-- Mobile Menu Toggle -->
+                <button id="toggle-navigation-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mx-auto max-w-5xl px-4 sm:px-8">
+        <!-- Projects Section -->
+        <section id="projects" class="mb-16">
+            <div class="prose">
+                <h1 style="max-width: 1100px; margin-left: auto; margin-right: auto;">Projects</h1>
+                
+                <!-- Projects Grid -->
+                <div class="projects-grid" style="max-width: 1100px; margin-left: auto; margin-right: auto;">
+                    
+                    <!-- Project 1: Mosquito Tracker -->
+                    <div class="project-card" style="background: var(--color-card-bg); border-radius: 0.85rem; padding: 1.25rem; border: 1px solid var(--color-border); transition: transform 0.2s ease, box-shadow 0.2s ease; cursor: pointer;" onclick="window.location='projects/mosquito-tracker.html'">
+                        <div style="display: block; margin: -1.25rem -1.25rem 0.85rem -1.25rem; position: relative;">
+                            <img src="assets/mosquito-tracker.png" alt="Mosquito Tracker" style="width: 100%; height: 145px; object-fit: cover; border-radius: 0.85rem 0.85rem 0 0;">
+                            <span style="position: absolute; bottom: -0.65rem; left: 1rem; background: linear-gradient(135deg, #d4a017, #f5c842); color: #6b3c00; font-size: 0.68rem; font-weight: 700; padding: 0.22rem 0.7rem; border-radius: 9999px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); z-index: 1; white-space: nowrap; letter-spacing: 0.01em;">🏆 WINNER</span>
+                        </div>
+                        <h3 style="margin: 0 0 0.6rem 0; font-size: 1.15rem; color: var(--color-global-text);">Mosquito Tracker</h3>
+                        <p style="font-size: 0.875rem; color: var(--color-secondary); margin-bottom: 0.85rem; line-height: 1.55;">Ultra-light redesign of GLOBE Observer with offline-first field data collection and client-side WebP compression.</p>
+                        <p style="font-size: 0.875rem; font-weight: 600; color: #d4a017; margin-bottom: 0.85rem;">🥇 1st Place App Improvement &nbsp;<em style="font-size: 0.75rem; font-weight: 400; color: var(--color-secondary);">NASA geoEMERGE</em></p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 0.85rem;">
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Astro</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Svelte</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">TypeScript</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">JavaScript</span>
+                        </div>
+                        <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
+                            <a href="https://devpost.com/software/app-improvement-track" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="color: var(--color-accent-2); text-decoration: none; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 0.25rem; white-space: nowrap;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/></svg>
+                                Devpost
+                            </a>
+                            <a href="https://github.com/matheusmaldaner/MosquitoTracker" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="color: var(--color-accent-2); text-decoration: none; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 0.25rem; white-space: nowrap; flex-shrink: 0;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"/></svg>
+                                GitHub
+                            </a>
+                            <a href="http://mosquito-tracker.vercel.app" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="color: var(--color-accent-2); text-decoration: none; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 0.25rem; white-space: nowrap;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/></svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Liquid Lift -->
+                    <div class="project-card" style="background: var(--color-card-bg); border-radius: 0.85rem; padding: 1.25rem; border: 1px solid var(--color-border); transition: transform 0.2s ease, box-shadow 0.2s ease; cursor: pointer;" onclick="window.location='projects/liquid-lift.html'">
+                        <div style="display: block; margin: -1.25rem -1.25rem 0.85rem -1.25rem; position: relative;">
+                            <img src="assets/liquid-lift.png" alt="Liquid Lift" style="width: 100%; height: 145px; object-fit: contain; background: #ffffff; border-radius: 0.85rem 0.85rem 0 0;">
+                            <span style="position: absolute; bottom: -0.65rem; left: 1rem; background: linear-gradient(135deg, #cd7f32, #e8a44a); color: #4a2000; font-size: 0.68rem; font-weight: 700; padding: 0.22rem 0.7rem; border-radius: 9999px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); z-index: 1; white-space: nowrap; letter-spacing: 0.01em;">🏆 WINNER</span>
+                        </div>
+                        <h3 style="margin: 0 0 0.6rem 0; font-size: 1.15rem; color: var(--color-global-text);">Liquid Lift</h3>
+                        <p style="font-size: 0.875rem; color: var(--color-secondary); margin-bottom: 0.85rem; line-height: 1.55;">Syringe-powered hydraulic arm kit teaching Pascal's Law through hands-on rescue mission challenges.</p>
+                        <p style="font-size: 0.875rem; font-weight: 600; color: #cd7f32; margin-bottom: 0.85rem;">🥉 3rd Place 6th-8th &nbsp;<em style="font-size: 0.75rem; font-weight: 400; color: var(--color-secondary);">Outreach Design Competition</em></p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 0.85rem;">
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Hydraulics</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">CAD</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Mechanical Engineering</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Outreach</span>
+                        </div>
+                        <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
+                            <a href="assets/DesignProject.pdf" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="color: var(--color-accent-2); text-decoration: none; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 0.25rem; white-space: nowrap;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/><path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/></svg>
+                                Design Report
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: CircuitEdge -->
+                    <div class="project-card" style="background: var(--color-card-bg); border-radius: 0.85rem; padding: 1.25rem; border: 1px solid var(--color-border); transition: transform 0.2s ease, box-shadow 0.2s ease; cursor: pointer;" onclick="window.location='projects/circuitedge.html'">
+                        <div style="display: block; margin: -1.25rem -1.25rem 0.85rem -1.25rem;">
+                            <img src="assets/circuitedge.png" alt="CircuitEdge" style="width: 100%; height: 145px; object-fit: cover; border-radius: 0.85rem 0.85rem 0 0; background: #f0fdf4;">
+                        </div>
+                        <h3 style="margin: 0 0 0.6rem 0; font-size: 1.15rem; color: var(--color-global-text);">CircuitEdge</h3>
+                        <p style="font-size: 0.875rem; color: var(--color-secondary); margin-bottom: 0.85rem; line-height: 1.55;">Paid platform that teaches Arduino from scratch: 29 tutorials, 232 quiz questions, Google and GitHub sign-in, and $9/month Stripe subscriptions.</p>
+                        <p style="font-size: 0.875rem; margin-bottom: 0.85rem;"><em style="font-size: 0.75rem; color: var(--color-secondary);">Mar 2026 &ndash; Present</em></p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 0.85rem;">
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Next.js</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Supabase</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Stripe</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">OAuth</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Arduino</span>
+                        </div>
+                        <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
+                            <a href="https://github.com/alfredrnavarro/CircuitEdge" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="color: var(--color-accent-2); text-decoration: none; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 0.25rem; white-space: nowrap;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"/></svg>
+                                GitHub
+                            </a>
+                            <a href="https://circuitedgean.alfredrnavarro.workers.dev/" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="color: var(--color-accent-2); text-decoration: none; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 0.25rem; white-space: nowrap;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/></svg>
+                                Website
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Embedded POS Terminal -->
+                    <div class="project-card" style="background: var(--color-card-bg); border-radius: 0.85rem; padding: 1.25rem; border: 1px solid var(--color-border); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                        <div style="display: block; margin: -1.25rem -1.25rem 0.85rem -1.25rem; position: relative;">
+                            <img src="assets/pos-terminal.svg" alt="Embedded POS Terminal" width="220" height="220" loading="lazy" decoding="async" style="width: 100%; height: 145px; object-fit: contain; background: #eef4f2; border-radius: 0.85rem 0.85rem 0 0;">
+                            <span style="position: absolute; bottom: -0.65rem; left: 1rem; background: linear-gradient(135deg, #6e1d1d, #9a3030); color: #f3ead9; font-size: 0.68rem; font-weight: 700; padding: 0.22rem 0.7rem; border-radius: 9999px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); z-index: 1; white-space: nowrap; letter-spacing: 0.01em;">IN PROGRESS</span>
+                        </div>
+                        <h3 style="margin: 0 0 0.6rem 0; font-size: 1.15rem; color: var(--color-global-text);">Embedded POS Terminal</h3>
+                        <p style="font-size: 0.875rem; color: var(--color-secondary); margin-bottom: 0.85rem; line-height: 1.55;">Touchscreen payment terminal on an ESP32-S3: C++ firmware reads NFC cards over SPI and I&#178;C, and a Flask server creates Stripe payments over Wi-Fi.</p>
+                        <p style="font-size: 0.875rem; margin-bottom: 0.85rem;"><em style="font-size: 0.75rem; color: var(--color-secondary);">Aug 2026 &ndash; Present</em></p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 0.85rem;">
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">ESP32-S3</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">C++</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Flask</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">NFC</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Stripe</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Emergency Resource Locator -->
+                    <div class="project-card" style="background: var(--color-card-bg); border-radius: 0.85rem; padding: 1.25rem; border: 1px solid var(--color-border); transition: transform 0.2s ease, box-shadow 0.2s ease; cursor: pointer;" onclick="window.location='projects/emergency-resource-locator.html'">
+                        <div style="display: block; margin: -1.25rem -1.25rem 0.85rem -1.25rem;">
+                            <img src="assets/emergency-resource-locator.png" alt="Emergency Resource Locator" style="width: 100%; height: 145px; object-fit: cover; border-radius: 0.85rem 0.85rem 0 0;">
+                        </div>
+                        <h3 style="margin: 0 0 0.6rem 0; font-size: 1.15rem; color: var(--color-global-text);">Emergency Resource Locator</h3>
+                        <p style="font-size: 0.875rem; color: var(--color-secondary); margin-bottom: 0.85rem; line-height: 1.55;">Interactive map for finding nearby emergency services and resources during crises.</p>
+                        <p style="font-size: 0.875rem; margin-bottom: 0.85rem;"><em style="font-size: 0.75rem; color: var(--color-secondary);">UF SwampHacks XI</em></p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 0.85rem;">
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">React Native</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">JavaScript</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Leaflet.js</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Vite</span>
+                        </div>
+                        <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
+                            <a href="https://devpost.com/software/emergency-resource-locator" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="color: var(--color-accent-2); text-decoration: none; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 0.25rem; white-space: nowrap;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/></svg>
+                                Devpost
+                            </a>
+                            <a href="https://emergency-resource-locator-two.vercel.app/" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="color: var(--color-accent-2); text-decoration: none; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 0.25rem; white-space: nowrap;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/></svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: LockIN -->
+                    <div class="project-card" style="background: var(--color-card-bg); border-radius: 0.85rem; padding: 1.25rem; border: 1px solid var(--color-border); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                        <div style="display: block; margin: -1.25rem -1.25rem 0.85rem -1.25rem;">
+                            <img src="assets/lockin.svg" alt="LockIN" width="220" height="220" loading="lazy" decoding="async" style="width: 100%; height: 145px; object-fit: contain; background: #f4fbfa; border-radius: 0.85rem 0.85rem 0 0;">
+                        </div>
+                        <h3 style="margin: 0 0 0.6rem 0; font-size: 1.15rem; color: var(--color-global-text);">LockIN</h3>
+                        <p style="font-size: 0.875rem; color: var(--color-secondary); margin-bottom: 0.85rem; line-height: 1.55;">Phone-locking study device built on a servo motor, IR remote, and LCD display to enforce distraction-free study sessions.</p>
+                        <p style="font-size: 0.875rem; margin-bottom: 0.85rem;"><em style="font-size: 0.75rem; color: var(--color-secondary);">SHPE Designathon &bull; Team of 4</em></p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 0.85rem;">
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">C++</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Arduino IDE</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Embedded</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">SolidWorks</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Neo-Runner -->
+                    <div class="project-card" style="background: var(--color-card-bg); border-radius: 0.85rem; padding: 1.25rem; border: 1px solid var(--color-border); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                        <div style="display: block; margin: -1.25rem -1.25rem 0.85rem -1.25rem; position: relative;">
+                            <img src="assets/roblox-studio.svg" alt="Neo-Runner" width="220" height="220" loading="lazy" decoding="async" style="width: 100%; height: 145px; object-fit: contain; background: #eaf7ff; border-radius: 0.85rem 0.85rem 0 0;">
+                            <span style="position: absolute; bottom: -0.65rem; left: 1rem; background: linear-gradient(135deg, #6e1d1d, #9a3030); color: #f3ead9; font-size: 0.68rem; font-weight: 700; padding: 0.22rem 0.7rem; border-radius: 9999px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); z-index: 1; white-space: nowrap; letter-spacing: 0.01em;">IN PROGRESS</span>
+                        </div>
+                        <h3 style="margin: 0 0 0.6rem 0; font-size: 1.15rem; color: var(--color-global-text);">Neo-Runner</h3>
+                        <p style="font-size: 0.875rem; color: var(--color-secondary); margin-bottom: 0.85rem; line-height: 1.55;">Original movement-based first-person platformer-shooter with custom character animations and trick-based movement mechanics.</p>
+                        <p style="font-size: 0.875rem; margin-bottom: 0.85rem;"><em style="font-size: 0.75rem; color: var(--color-secondary);">Roblox Studio</em></p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 0.85rem;">
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Lua</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Roblox Studio</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Animation</span>
+                            <span style="background: var(--color-tag-bg); color: var(--color-tag-text); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.7rem;">Game Design</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mx-auto max-w-3xl px-4 sm:px-8 py-12 text-center" style="position: relative;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+            <p style="color: var(--color-secondary); font-size: 0.875rem;">© 2026 Alfred Navarro.</p>
+        </div>
+    </footer>
+
+    <script src="vinyl-player.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
