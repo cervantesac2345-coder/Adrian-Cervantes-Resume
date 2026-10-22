@@ -8,15 +8,13 @@
     // Apple Music link are looked up from the title and artist; set cover
     // and link to override them. Leave out src to fall back to Apple's
     // 30-second preview.
-    var TRACKS = [
-        { title: 'Fly',               artist: 'Djo',          src: 'assets/music/fly.mp3' },
-        { title: 'Lost in Yesterday', artist: 'Tame Impala',  src: 'assets/music/lost-in-yesterday.mp3' },
-        { title: "Let's Go Outside",  artist: 'Far Caspian',  src: 'assets/music/lets-go-outside.mp3' },
-        { title: 'oh yeah',           artist: 'Steve Lacy',   src: 'assets/music/oh-yeah.mp3',
-          cover: 'https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1c/b2/46/1cb246db-afae-a599-d377-44a7ea7267fa/196874346976.jpg/200x200bb.jpg',
-          link: 'https://music.apple.com/us/album/oh-yeah/6773775032' },
-        { title: 'The Moment',        artist: 'Tame Impala',  src: 'assets/music/the-moment.mp3' }
-    ];
+   var TRACKS = [
+  { title: 'Fly', artist: 'Djo', src: 'fly.mp3' },
+  { title: 'Lost in Yesterday', artist: 'Tame Impala', src: 'lost-in-yesterday.mp3' },
+  { title: "Let's Go Outside", artist: 'Far Caspian', src: 'lets-go-outside.mp3' },
+  { title: 'oh yeah', artist: 'Steve Lacy', src: 'oh-yeah.mp3' },
+  { title: 'The Moment', artist: 'Tame Impala', src: 'the-moment.mp3' }
+];
 
     if (!TRACKS.length) return;
 
