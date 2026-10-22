@@ -221,19 +221,19 @@
             }
         }
 
-        var img = new Image();
-        img.crossOrigin = "anonymous";
-        img.onload = function () { onImageReady(img); };
-        img.onerror = function () {
-            var fallback = new Image();
-            fallback.crossOrigin = "anonymous";
-            fallback.onload = function () { onImageReady(fallback); };
-            fallback.onerror = function () {
-                console.warn("DitherBG: photo failed to load");
-            };
-            fallback.src = "assets/alfred-photo.png";
-        };
-        img.src = "assets/alfred-photo.webp";
+     var img = new Image();
+img.crossOrigin = "anonymous";
+img.onload = function () { onImageReady(img); };
+img.onerror = function () {
+    var fallback = new Image();
+    fallback.crossOrigin = "anonymous";
+    fallback.onload = function () { onImageReady(fallback); };
+    fallback.onerror = function () {
+        console.warn("DitherBG: photo failed to load");
+    };
+    fallback.src = "alfred-photo.png";
+};
+img.src = "alfred-photo.png";
 
         var mouse = { x: 0.5, y: 0.5, active: 0, target: 0, entered: false };
         function onMove(e) {
