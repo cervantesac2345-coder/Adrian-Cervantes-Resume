@@ -124,7 +124,7 @@
         var opts = {
             fit: "contain",
             focusY: 30,
-            shiftX: 0.58, // positive = shift the image left on screen
+            shiftX: 0.62, // positive = shift the image left on screen
             ditherStyle: "lines",
             dotSize: 3,
             revealRadius: 160,
