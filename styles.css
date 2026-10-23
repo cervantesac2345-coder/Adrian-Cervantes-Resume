@@ -815,7 +815,7 @@ body.has-hero::before {
 
 .hero-name {
     font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
-    font-size: clamp(3rem, 8.5vw, 6.5rem);
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
     font-weight: 900;
     line-height: 1.02;
     color: var(--color-global-text);
