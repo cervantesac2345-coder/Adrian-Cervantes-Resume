@@ -672,8 +672,8 @@ body.has-hero main::before {
     right: 0;
     height: 93vh;
     background-color: #17171b;
-    background-image: linear-gradient(rgba(10, 10, 12, 0.45), rgba(10, 10, 12, 0.45)), url('assets/venice-bg.jpg');
-    background-image: linear-gradient(rgba(10, 10, 12, 0.45), rgba(10, 10, 12, 0.45)), image-set(url('assets/venice-bg.webp') type('image/webp') 1x, url('assets/venice-bg.jpg') type('image/jpeg') 1x);
+    background-image: linear-gradient(rgba(10, 10, 12, 0.45), rgba(10, 10, 12, 0.45)), url('venice-bg.jpg');
+    background-image: linear-gradient(rgba(10, 10, 12, 0.45), rgba(10, 10, 12, 0.45)), image-set(url('venice-bg.webp') type('image/webp') 1x, url('venice-bg.jpg') type('image/jpeg') 1x);
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
