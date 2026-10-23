@@ -761,8 +761,8 @@ body.has-hero::before {
     left: 0;
     right: 0;
     height: calc(var(--hero-offset) + clamp(480px, 100vh, 960px));
-    background-image: url('assets/newyork-hero.jpg');
-    background-image: image-set(url('assets/newyork-hero.webp') type('image/webp') 1x, url('assets/newyork-hero.jpg') type('image/jpeg') 1x);
+    background-image: url('newyork-hero.jpg');
+    background-image: image-set(url('newyork-hero.webp') type('image/webp') 1x, url('newyork-hero.jpg') type('image/jpeg') 1x);
     background-size: cover;
     background-position: center 40%;
     background-repeat: no-repeat;
