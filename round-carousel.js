@@ -9,17 +9,17 @@
     "use strict";
 
     var DEFAULT_IMAGES = [
-        "assets/carousel-1.jpg",
-        "assets/carousel-2.jpg",
-        "assets/carousel-3.jpg",
-        "assets/carousel-4.jpg",
-        "assets/carousel-5.jpg",
-        "assets/carousel-6.jpg",
-        "assets/carousel-7.jpg",
-        "assets/carousel-8.jpg",
-        "assets/carousel-9.jpg",   // Ely
-        "assets/carousel-10.jpg",  // Ian
-        "assets/carousel-11.jpg",  // Tyler
+        "carousel-1.jpg",
+        "carousel-2.jpg",
+        "carousel-3.jpg",
+        "carousel-4.jpg",
+        "carousel-5.jpg",
+        "carousel-6.jpg",
+        "carousel-7.jpg",
+        "carousel-8.jpg",
+        "carousel-9.jpg",   // Ely
+        "carousel-10.jpg",  // Ian
+        "carousel-11.jpg",  // Tyler
     ];
 
     // One link per image, same order as DEFAULT_IMAGES above. Matched by
@@ -30,7 +30,7 @@
     //   - carousel-3 (nick.jpg) -> nicolasmurg.github.io, assuming "Nick"
     //     is short for Nicolas Murguia
     var DEFAULT_LINKS = [
-        "https://luanamaldaner.github.io/",
+        "https://www.history.com/articles/miracle-andes-disaster-survival",
         "https://matheus.wiki/index.html",
         "https://nicolasmurg.github.io/NicolasMurguia/",
         "https://www.linkedin.com/in/yimo-liu/?isSelfProfile=false",
