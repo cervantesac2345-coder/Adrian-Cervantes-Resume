@@ -31,7 +31,7 @@
     //     is short for Nicolas Murguia
     var DEFAULT_LINKS = [
         "https://www.history.com/articles/miracle-andes-disaster-survival",
-        "https://matheus.wiki/index.html",
+        "https://archkennedy.com/phil-robertson/",
         "https://nicolasmurg.github.io/NicolasMurguia/",
         "https://www.linkedin.com/in/yimo-liu/?isSelfProfile=false",
         "https://www.linkedin.com/in/edison-liu-328232298/?isSelfProfile=false",
