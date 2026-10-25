@@ -201,49 +201,35 @@
         /* ── Windows: two tall panes on the back wall, behind the stage ─────── */
         /* The theater gets its own stacking context so the windows can sit
            at z-index -1 behind the stage without dropping under the page. */
-        .np-theater {
-    position: relative;
-    isolation: isolate;
-    margin-top: 17rem;
-    overflow: hidden;
-}
-
-.news-windows {
-    position: absolute;
-    left: 50%;
-    top: -15rem;
-    transform: translateX(-50%);
-    width: min(100%, 1100px);
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    pointer-events: none;
-    z-index: 0;
-    padding: 0 1rem;
-}
-
-.news-windows .news-window {
-    width: min(26%, 260px);
-    flex: 1 1 260px;
-}
-
-.news-window {
-    margin: 0;
-    padding: 12px 12px 22px;
-    background: var(--panel);
-    border: 1px solid var(--glass-border);
-    border-radius: 2px;
-    box-shadow:
-        inset 0 0 0 4px var(--panel),
-        inset 0 0 0 5px var(--glass-border-outer),
-        var(--glass-shadow);
-    position: relative;
-}
-
-.np-stage {
-    position: relative;
-    z-index: 1;
-}
+         .np-theater {
+            isolation: isolate;
+            margin-top: 17rem;
+        }
+        .news-windows {
+            position: absolute;
+            /* Pushed out into the page margins, stopping short of the side rails */
+            --win-out: clamp(0px, (100vw - 980px) / 2 - 130px, 240px);
+            inset: -15rem calc(-1 * var(--win-out)) auto;
+            z-index: -1;
+            display: flex;
+            justify-content: space-between;
+            pointer-events: none;
+        }
+        .news-windows .news-window {
+            width: 26%;
+        }
+        .news-window {
+            margin: 0;
+            padding: 12px 12px 22px;
+            background: var(--panel);
+            border: 1px solid var(--glass-border);
+            border-radius: 2px;
+            box-shadow:
+                inset 0 0 0 4px var(--panel),
+                inset 0 0 0 5px var(--glass-border-outer),
+                var(--glass-shadow);
+            position: relative;
+        }
         /* The sill */
         .news-window::after {
             content: "";
