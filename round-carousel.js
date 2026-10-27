@@ -16,7 +16,7 @@
         "carousel-5.png",
         "carousel-6.png",
         "carousel-7.png",
-        "carousel-8.jpg",
+        "carousel-8.png",
         "carousel-9.jpg",   // Ely
         "carousel-10.jpg",  // Ian
         "carousel-11.jpg",  // Tyler
@@ -37,7 +37,7 @@
         "https://www.biography.com/history-culture/september-11-2001-real-life-heroes",
         "https://medium.com/@byms.brand.store/why-is-cruyff-the-father-of-modern-football-and-byms-inspiration-699c421f02c5",
         "https://www.history.com/this-day-in-history/february-4/facebook-launches-mark-zuckerberg",
-        "https://www.linkedin.com/in/anhhoangmai2007/?isSelfProfile=false",
+        "https://alvinandhisthoughts.com/2025/08/20/michael-jackson-and-the-power-the-industry-couldnt-stand/",
         "https://www.linkedin.com/in/ely-herman-506143361",
         "https://www.linkedin.com/in/ian-greyvensteyn-9b98903b3/",
         "https://www.linkedin.com/in/tyler-alves-komitor/",
