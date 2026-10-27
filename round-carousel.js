@@ -15,7 +15,7 @@
         "carousel-4.png",
         "carousel-5.png",
         "carousel-6.png",
-        "carousel-7.png",
+        "carousel-a.png",
         "carousel-8.png",
         "carousel-9.jpg",   // Ely
         "carousel-10.jpg",  // Ian
