@@ -14,7 +14,7 @@
         "carousel-3.png",
         "carousel-4.png",
         "carousel-5.png",
-        "carousel-6.jpg",
+        "carousel-6.png",
         "carousel-7.jpg",
         "carousel-8.jpg",
         "carousel-9.jpg",   // Ely
@@ -35,7 +35,7 @@
         "https://www.history.com/articles/2008-financial-crisis-causes",
         "https://allthatsinteresting.com/hacksaw-ridge-true-story",
         "https://www.biography.com/history-culture/september-11-2001-real-life-heroes",
-        "https://jaimebreitkreutz.com/",
+        "https://medium.com/@byms.brand.store/why-is-cruyff-the-father-of-modern-football-and-byms-inspiration-699c421f02c5",
         "https://www.linkedin.com/in/raamia/?isSelfProfile=false",
         "https://www.linkedin.com/in/anhhoangmai2007/?isSelfProfile=false",
         "https://www.linkedin.com/in/ely-herman-506143361",
