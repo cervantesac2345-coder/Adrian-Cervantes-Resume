@@ -10,7 +10,7 @@
 
     var DEFAULT_IMAGES = [
         "carousel-1.jpg",
-        "carousel-h.png",
+        "carousel-z.png",
         "carousel-3.png",
         "carousel-4.png",
         "carousel-5.png",
