@@ -11,7 +11,7 @@
     var DEFAULT_IMAGES = [
         "carousel-1.jpg",
         "carousel-h.png",
-        "carousel-3.jpg",
+        "carousel-3.png",
         "carousel-4.jpg",
         "carousel-5.jpg",
         "carousel-6.jpg",
@@ -32,7 +32,7 @@
     var DEFAULT_LINKS = [
         "https://www.history.com/articles/miracle-andes-disaster-survival",
         "https://archkennedy.com/phil-robertson/",
-        "https://nicolasmurg.github.io/NicolasMurguia/",
+        "https://www.history.com/articles/2008-financial-crisis-causes",
         "https://www.linkedin.com/in/yimo-liu/?isSelfProfile=false",
         "https://www.linkedin.com/in/edison-liu-328232298/?isSelfProfile=false",
         "https://jaimebreitkreutz.com/",
