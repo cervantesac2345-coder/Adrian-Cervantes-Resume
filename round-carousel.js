@@ -34,7 +34,7 @@
         "https://archkennedy.com/phil-robertson/",
         "https://www.history.com/articles/2008-financial-crisis-causes",
         "https://allthatsinteresting.com/hacksaw-ridge-true-story",
-        "https://www.youtube.com/watch?v=nE7NgVNLR6I",
+        "https://www.youtube.com/watch?v=nE7NgVNLR6I", 
         "https://medium.com/@byms.brand.store/why-is-cruyff-the-father-of-modern-football-and-byms-inspiration-699c421f02c5",
         "https://www.history.com/this-day-in-history/february-4/facebook-launches-mark-zuckerberg",
         "https://alvinandhisthoughts.com/2025/08/20/michael-jackson-and-the-power-the-industry-couldnt-stand/",
