@@ -18,8 +18,8 @@
         "carousel-a.png",
         "carousel-8.png",
         "carousel-9.png",   // Ely
-        "carousel-10.jpg",  // Ian
-        "carousel-11.jpg",  // Tyler
+        "carousel-10.png",  // Ian
+        "carousel-11.png",  // Tyler
     ];
 
     // One link per image, same order as DEFAULT_IMAGES above. Matched by
@@ -39,8 +39,8 @@
         "https://www.history.com/this-day-in-history/february-4/facebook-launches-mark-zuckerberg",
         "https://alvinandhisthoughts.com/2025/08/20/michael-jackson-and-the-power-the-industry-couldnt-stand/",
         "https://allthatsinteresting.com/chalino-sanchez",
-        "https://www.linkedin.com/in/ian-greyvensteyn-9b98903b3/",
-        "https://www.linkedin.com/in/tyler-alves-komitor/",
+        "https://www.history.com/articles/ancient-egypt-pyramid-ramp-discovery",
+        "https://www.youtube.com/watch?v=3t5b7qriF1Q",
     ];
 
     var CFG = {
